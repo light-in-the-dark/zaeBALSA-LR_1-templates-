@@ -2,54 +2,57 @@
 
 int menu()
 {
-	system("cls");
-	getInfo(0);
-
-	char flag = ' ';
-	cin >> flag;
-	cin.clear();
-	cin.ignore();
-	
-	if (isdigit(flag))
+	do
 	{
-		switch (flag)
+		system("cls");
+		getInfo(0);
+
+		char flag = ' ';
+		cin >> flag;
+		cin.clear();
+		cin.ignore();
+
+		if (isdigit(flag))
 		{
-		case '3':
-			switch (chooseTypeOfNumbers())
+			switch (flag)
 			{
-			case 'i':
-				launchSeminar3(1);
+			case '3':
+				switch (chooseTypeOfNumbers())
+				{
+				case 'i':
+					cout << "Запуск семинара №3...";
+					Sleep(1000);
+					launchSeminar3((int)1);
+					break;
+				case 'f':
+					cout << "Запуск семинара №3...";
+					Sleep(1000);
+					launchSeminar3((float)1);
+					break;
+				case 'd':
+					cout << "Запуск семинара №3...";
+					Sleep(1000);
+					launchSeminar3((double)1);
+					break;
+				}
 				break;
-			case 'f':
-				launchSeminar3(1.0f);
+			case '4':
+				cout << "Запуск семинара №4...";
+				Sleep(1000);
+				launchSeminar4();
 				break;
-			case 'd':
-				launchSeminar3(1.0);
+			case '5':
+				cout << "Запуск семинара №5...";
+				Sleep(1000);
+				launchSeminar5();
+				break;
+			case '0':
+				return 0;
+			default:
+				cerr << "Некорректный номер. Перезапуск...";
+				Sleep(1000);
 				break;
 			}
-			break;
-		case '4':
-			cout << "Запуск семинара №4...";
-			Sleep(1000);
-			launchSeminar4();
-			break;
-		case '5':
-			cout << "Запуск семинара №5...";
-			Sleep(1000);
-			launchSeminar5();
-			break;
-		case '0':
-			return 0;
-		default:
-			cerr << "Некорректный номер. Перезапуск...";
-			Sleep(2000);
-			break;
 		}
-	}
-	else
-	{
-		cerr << "Некорректный номер. Перезапуск...";
-		Sleep(2000);
-	}
-	return -1;
+	} while (true);
 }

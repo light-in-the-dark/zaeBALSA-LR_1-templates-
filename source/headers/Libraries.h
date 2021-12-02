@@ -2,12 +2,9 @@
 
 #include <iostream>
 #include <Windows.h>
-#include <stdlib.h>
-#include <math.h>
+#include <math.h> // fabs()
 #include <fstream>
-#include <cstdio>
 
 using namespace std;
 
 #include "Prototypes.h"
-

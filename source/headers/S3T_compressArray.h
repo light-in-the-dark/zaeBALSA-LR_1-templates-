@@ -44,6 +44,8 @@ T* compressArray(T *arr, int n)
 	{
 		cout << arr[i] << " ";
 	}
+	cout << endl;
+	
 	return arr;
 }
 

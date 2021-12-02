@@ -17,13 +17,14 @@ char chooseTypeOfNumbers();
 /*====================SEMINAR 3======================*/
 // Ввод длины массива
 int inputArraySize();
+
 #include "S3T_indexes.h"
 #include "S3T_inputArray.h"
 #include "S3T_oddSum.h"
 #include "S3T_negativeSum.h"
 #include "S3T_compressArray.h"
 
-
+#include "S3T_launch.h"
 // Ввод элементов массива
 // int inputArray(float *arr, int n);
 // Проверка ввода элементов массива
@@ -41,7 +42,7 @@ int inputArraySize();
 // Поиск конечного индекса
 // int findEndIndex(float *arr, int n);
 
-#include "S3T_launch.h"
+
 
 /*====================SEMINAR 4======================*/
 // Ввод размера матрицы
