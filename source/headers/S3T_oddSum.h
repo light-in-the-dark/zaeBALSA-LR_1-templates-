@@ -6,14 +6,16 @@
 template <typename T>
 T findOddSum(T *arr, int n)
 {
+	cout << "Номера нечетных элементов: ";
 	T oddSum = 0;
-	for (int temp = 0; temp < n; temp++)
+	for (int i = 0; i < n; i++)
 	{
-		if (temp % 2 == 0)
+		if (i % 2 == 0)
 		{
-			oddSum += arr[temp];
+			cout << i + 1 << " ";
+			oddSum += arr[i];
 		}
 	}
-	cout << "Сумма элементов с нечетными номерами: " << oddSum << endl;
+	cout << "\nСумма элементов с нечетными номерами: " << oddSum << endl;
 	return oddSum;
 }

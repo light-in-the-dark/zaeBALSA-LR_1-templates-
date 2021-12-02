@@ -13,6 +13,8 @@ T findNegativeSum(T *arr, int n)
 	{
 		negativeSum += arr[temp];
 	}
+
+	cout << "Номера первого и последнего отрицательных элементов: " << startIndex + 1 <<" "<< endIndex + 1 << endl;
 	cout << "Сумма чисел между отрицательными элементами: " << negativeSum << endl;
 	return negativeSum;
 }

@@ -10,9 +10,9 @@ int checkInputArray(T *arr, int n)
 	int startIndex = findStartIndex(arr, n);
 	int endIndex = findEndIndex(arr, n);
 	int amountOfNeg = 0; // количество отрицательных элементов
-	for (int temp = 0; temp < n; temp++)
+	for (int i = 0; i < n; i++)
 	{
-		if (arr[temp] < 0)
+		if (arr[i] < 0)
 		{
 			amountOfNeg++;
 		}
@@ -44,9 +44,9 @@ T* inputArray(int size)
 	{
 		T *arr = new T[size];
 		cout << "Введите элементы массива: ";
-		for (int temp = 0; temp < size; temp++)
+		for (int i = 0; i < size; i++)
 		{
-			cin >> arr[temp];
+			cin >> arr[i];
 			cin.clear();
 			cin.ignore();
 		}
