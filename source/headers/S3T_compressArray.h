@@ -16,36 +16,41 @@ T* swapInArray(T *arr, int i, int j)
 
 // Сжатие и перестановка элементов массива и нулей
 template <typename T>
-void compressArray(T *arr, int n)
+void compressArray(T *arr, int size)
 {
-	
-	for (int temp = 0; temp < n; temp++)
+	T* tempArr = new T[size];
+
+	for (int i = 0; i < size; i++)
 	{
-		if (fabs((double)arr[temp]) < 1)
+		tempArr[i] = arr[i];
+		if (fabs((double)tempArr[i]) < 1)
 		{
-			arr[temp] = 0;
+			tempArr[i] = 0;
 		}
 	}
 	int i = 0;
 	int j = 0;
-	for (i = 0, j = 0; j < n; j++)
+	for (i = 0, j = 0; j < size; j++)
 	{
-		if (arr[j] != 0)
+		if (tempArr[j] != 0)
 		{
 			if (i < j)
 			{
-				swapInArray(arr, i, j);
+				swapInArray(tempArr, i, j);
 			}
 			i++;
 		}
 	}
 
 	cout << "Измененный массив: ";
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < size; i++)
 	{
-		cout << arr[i] << " ";
+		cout << tempArr[i] << " ";
 	}
 	cout << endl;
+	
+	delete[] tempArr;
+	return;
 }
 
 #endif
