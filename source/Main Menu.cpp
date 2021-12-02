@@ -7,14 +7,14 @@ int menu()
 		system("cls");
 		getInfo(0);
 
-		char flag = ' ';
-		cin >> flag;
+		char flag[100]; // экспериментальный безотказный ввод данных
+		cin.getline(flag, 100, '\n');
 		cin.clear();
-		cin.ignore();
 
-		if (isdigit(flag))
+		if (isdigit(flag[0]) && flag[1] == '\0')
+
 		{
-			switch (flag)
+			switch (flag[0])
 			{
 			case '3':
 				switch (chooseTypeOfNumbers())
@@ -66,6 +66,7 @@ int menu()
 			default:
 				cerr << "Некорректный номер. Перезапуск...";
 				Sleep(1000);
+				system("pause > nul");
 				break;
 			}
 		}
