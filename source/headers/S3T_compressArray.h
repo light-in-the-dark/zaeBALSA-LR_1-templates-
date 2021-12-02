@@ -16,8 +16,9 @@ T* swapInArray(T *arr, int i, int j)
 
 // Сжатие и перестановка элементов массива и нулей
 template <typename T>
-T* compressArray(T *arr, int n)
+void compressArray(T *arr, int n)
 {
+	
 	for (int temp = 0; temp < n; temp++)
 	{
 		if (fabs((double)arr[temp]) < 1)
@@ -45,8 +46,6 @@ T* compressArray(T *arr, int n)
 		cout << arr[i] << " ";
 	}
 	cout << endl;
-	
-	return arr;
 }
 
 #endif
