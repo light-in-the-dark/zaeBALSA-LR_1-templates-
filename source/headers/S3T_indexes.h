@@ -1,5 +1,4 @@
-#ifndef S3T_INDEXES_H
-#define S3T_INDEXES_H
+#pragma once
 
 #include "Libraries.h"
 
@@ -33,5 +32,3 @@ int findEndIndex(T *arr, int n)
 	}
 	return endIndex;
 }
-
-#endif

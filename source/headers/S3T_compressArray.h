@@ -1,5 +1,4 @@
-#ifndef S3T_COMPRESSARRAY_H
-#define S3T_COMPRESSARRAY_H
+#pragma once
 
 #include "Libraries.h"
 
@@ -52,5 +51,3 @@ void compressArray(T *arr, int size)
 	delete[] tempArr;
 	return;
 }
-
-#endif

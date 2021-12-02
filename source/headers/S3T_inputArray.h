@@ -1,5 +1,4 @@
-#ifndef S3T_INPUTARRAY_H
-#define S3T_INPUTARRAY_H
+#pragma once
 
 #include "Libraries.h"
 
@@ -89,5 +88,3 @@ T* inputArray(int size)
 		}
 	} while (true);
 }
-
-#endif
