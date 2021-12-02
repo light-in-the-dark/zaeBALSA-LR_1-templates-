@@ -1,6 +1,10 @@
+#pragma once
+
 #include "Libraries.h"
 
-int findMaxDiagonalsSumm(int **matrix, int size)
+// Поиск максимума среди элементов диагоналей, параллельных главной диагонали матрицы
+template <typename T>
+void findMaxDiagonalsSum(T **matrix, int size)
 {
     int tmp_size = 2;    // длина самой короткой побочной диагонали
     int iter = size - 2; // количество итераций для матрицы
@@ -28,5 +32,5 @@ int findMaxDiagonalsSumm(int **matrix, int size)
         tmp_size++;
         iter--;
     }
-    return maxSum;
+    cout << "Максимум среди сумм элементов диагоналей, параллельных главной диагонали = " << maxSum << endl;
 }

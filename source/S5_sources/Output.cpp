@@ -1,33 +1,5 @@
 #include "Libraries.h"
 
-/*====================SEMINAR 4======================*/
-void matrixOutput(int **matrix, int size)
-{
-    cout << "=====================================================================================" << endl;
-    cout << "Введенная матрица:" << endl;
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = 0; j < size; j++)
-        {
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-}
-
-void prodOutput(int prod, int rowNum)
-{
-    cout << "Произведение элементов в " << rowNum + 1 << " строке = " << prod << endl;
-}
-
-void maxSumOutput(int maxSum)
-{
-    cout << endl;
-    cout << "Максимальная сумма побочных диагоналей = " << maxSum << endl;
-    cout << endl;
-}
-
 /*====================SEMINAR 5======================*/
 char instructionsOutput(char code)
 {

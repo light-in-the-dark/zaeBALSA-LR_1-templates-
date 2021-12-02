@@ -35,7 +35,7 @@ int checkInputArray(T *arr, int n)
 
 // Ввод элементов массива
 template <typename T>
-T* inputArray(int size)
+T *inputArray(int size)
 {
 	cout << "Задан размер массива - " << size << endl;
 
@@ -86,5 +86,6 @@ T* inputArray(int size)
 			system("pause > nul");
 			break;
 		}
+		delete[] arr;
 	} while (true);
 }

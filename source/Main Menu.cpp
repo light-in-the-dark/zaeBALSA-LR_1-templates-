@@ -37,9 +37,24 @@ int menu()
 				}
 				break;
 			case '4':
-				cout << "Запуск семинара №4...";
-				Sleep(1000);
-				launchSeminar4();
+				switch (chooseTypeOfNumbers())
+				{
+				case 'i':
+					cout << "Запуск семинара №4...";
+					Sleep(1000);
+					launchSeminar4((int)1);
+					break;
+				case 'f':
+					cout << "Запуск семинара №4...";
+					Sleep(1000);
+					launchSeminar4((float)1);
+					break;
+				case 'd':
+					cout << "Запуск семинара №4...";
+					Sleep(1000);
+					launchSeminar4((double)1);
+					break;
+				}
 				break;
 			case '5':
 				cout << "Запуск семинара №5...";
