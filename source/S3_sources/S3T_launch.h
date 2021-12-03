@@ -39,32 +39,4 @@ void launchSeminar3(T type)
 			system("pause > nul");
 		}
 	} while (true);
-
-	// int n = 0; // длина массива
-	// do
-	// {
-	// 	n = inputArrayLenght();
-	// } while (n == -1);
-
-	// T *array = new T[n];
-
-	// int arrIsValid = 0; // для проверки массива на корректность
-	// arrIsValid = inputArray(array, n);
-	// while (arrIsValid == -1)
-	// {
-	// 	delete[] array;
-	// 	T *array = new T[n];
-	// 	arrIsValid = inputArray(array, n);
-	// }
-
-	// T oddSum = findOddSum(array, n);
-	// T negSum = findNegativeSum(array, n);
-
-	// compressArray(array, n);
-
-	// arrayOutput(array, n, oddSum, negSum);
-
-	// delete[] array;
-	// cout << "Программа успешно завершена. Для выхода в меню нажмите любую клавишу..." << endl;
-	// system("pause > nul");
 }
