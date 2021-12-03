@@ -29,7 +29,7 @@ void launchSeminar3(T type)
 			findNegativeSum(arr, arrSize);
 			break;
 		case 3:
-			compressArray(arr, arrSize);
+			outNewArray(arr, arrSize);
 			break;
 		case 0:
 			delete[] arr;

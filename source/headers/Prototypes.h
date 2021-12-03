@@ -18,7 +18,7 @@ int inputArraySize();
 #include "S3T_inputArray.h"
 #include "S3T_oddSum.h"
 #include "S3T_negativeSum.h"
-#include "S3T_compressArray.h"
+#include "S3T_sortAndCompressArray.h"
 
 #include "S3T_launch.h"
 
